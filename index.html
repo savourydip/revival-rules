@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Revival Roleplay — Server Rules</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#0C0C0E;--card:#131418;--hover:#1B1C23;--sel:#24252F;--bd:#26262D;--red:#C8102E;--redl:#FF5277;--sil:#CBD5E1;--sild:#94A3B8;--gold:#D4AF37;--tx:#F2EDE4;--body:#E6E1D5;--mut:#8E8D94}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--body);font:15px/1.7 Montserrat,system-ui,sans-serif}
+h1,h2,h3{font-family:Cinzel,Georgia,serif;text-transform:uppercase;letter-spacing:1.5px;color:var(--tx);margin:0}
+header{position:sticky;top:0;z-index:5;background:rgba(12,12,14,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--bd);padding:12px 20px;display:flex;gap:16px;align-items:center;justify-content:space-between}
+.logo{font:700 18px Cinzel,serif;letter-spacing:3px;color:var(--tx)}.logo b{color:var(--red)}
+#q{background:var(--card);border:1px solid var(--bd);color:var(--tx);border-radius:2px;padding:9px 12px;font:inherit;width:min(280px,50%);transition:all 180ms ease}
+#q:focus{outline:none;border-color:var(--sild)}
+.hero{text-align:center;padding:64px 20px 40px;max-width:760px;margin:auto}
+.hero small{color:var(--gold);letter-spacing:4px;font-size:12px;text-transform:uppercase}
+.hero h1{font-size:clamp(28px,6vw,48px);margin:12px 0}
+.line{height:1px;background:linear-gradient(90deg,transparent,var(--sil),transparent);margin:22px auto;max-width:420px;opacity:.6}
+.golden{border:1px solid var(--bd);border-left:3px solid var(--red);background:var(--card);border-radius:2px;padding:22px 26px;text-align:left;margin-top:30px}
+.golden h2{font-size:15px;color:var(--gold);margin-bottom:6px}.golden p{margin:6px 0}
+.golden .big{font:700 24px Cinzel,serif;color:var(--tx);letter-spacing:1.5px}
+.wrap{display:flex;gap:32px;max-width:1080px;margin:0 auto;padding:0 20px 60px}
+nav{position:sticky;top:80px;align-self:flex-start;min-width:210px;display:flex;flex-direction:column;gap:4px}
+nav a{color:var(--sild);text-decoration:none;padding:8px 12px;border-left:2px solid var(--bd);font-size:13px;letter-spacing:.5px;transition:all 180ms ease}
+nav a:hover{background:var(--hover);color:var(--tx);border-color:var(--redl)}
+main{flex:1;min-width:0}
+section{margin-top:36px}
+section>h2{font-size:20px;padding-bottom:10px;border-bottom:1px solid var(--bd);margin-bottom:14px}
+section>h2 span{color:var(--red);margin-right:10px}
+.rule{background:var(--card);border:1px solid var(--bd);border-radius:2px;padding:14px 18px;margin-bottom:10px;transition:all 180ms ease}
+.rule:hover{background:var(--hover);border-color:var(--sel)}
+.rule h3{font-size:14px;color:var(--sil);margin-bottom:6px}.rule h3 i{font-style:normal;color:var(--redl);margin-right:8px}
+.rule p{margin:5px 0;color:var(--body)}.rule p.sub{font:600 12px Cinzel,serif;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-top:12px}
+.rule.hide{display:none}
+footer{text-align:center;color:var(--mut);padding:36px 20px;border-top:1px solid var(--bd);font-size:13px}
+footer p{max-width:620px;margin:8px auto}
+@media(max-width:800px){.wrap{display:block}nav{position:static;flex-direction:row;overflow-x:auto;margin:0 0 10px}nav a{white-space:nowrap;border-left:0;border-bottom:2px solid var(--bd)}}
+</style></head><body>
+<header><div class="logo">REVIVAL <b>·</b> RP</div><input id="q" type="search" placeholder="Search rules…" aria-label="Search rules"></header>
+<div class="hero"><small>1907 · Revival Roleplay</small><h1>Server Rules</h1><div class="line"></div>
+<div class="golden"><h2>The Golden Rule</h2><p class="big">Don't be a Dick.</p><p>It's quite simple, really. Make good decisions.</p><p>Use common sense, respect other players, and remember that everyone is here to enjoy their roleplay experience. If you're unsure whether something is acceptable, consider how it would affect the experience of others.</p></div></div>
+<div class="wrap"><nav id="nav"></nav><main id="main"></main></div>
+<footer><div class="line"></div><h3 style="font-size:13px;margin-bottom:8px">Final Reminder</h3>
+<p>These rules exist to protect fair, immersive, and enjoyable roleplay for the entire community. Staff reserve the right to review situations individually and take appropriate action where behaviour undermines the server or the experience of other players.</p>
+<p>Use common sense, respect the roleplay, and make Revival Roleplay a world worth being part of.</p></footer>
+<script>
+const D=[
+["community","Community Rules",1,[
+["Respect Everyone","Treat all members of the community with respect. Harassment, bullying, discrimination, hate speech, or personal attacks will not be tolerated."],
+["No Toxic Behaviour","Aggressive, abusive, or deliberately disruptive behaviour towards other players or staff is prohibited. In-character disagreements are acceptable; out-of-character hostility is not."],
+["Follow Staff Instructions","Staff decisions must be respected. If you disagree with a decision, raise the issue through the appropriate channels calmly and respectfully rather than arguing in-game."],
+["No Exploiting or Cheating","Using exploits, bugs, third-party cheats, or other unfair advantages is strictly prohibited. If you discover a bug, report it to staff rather than abusing it."],
+["No Metagaming","You must not use information obtained outside your character's roleplay to influence your character's in-game decisions. This includes information from streams, Discord conversations, messages, or other out-of-character sources."],
+["No Powergaming","Do not force actions or outcomes on other players without giving them a reasonable opportunity to respond. Roleplay should be collaborative and allow everyone involved to participate."],
+["No Combat Logging","Disconnecting, leaving the server, or deliberately avoiding the game to escape an active roleplay situation or its consequences is prohibited."],
+["No Random Deathmatching (RDM)","Attacking or killing another player without a valid roleplay reason or appropriate interaction is prohibited."],
+["No Harassment Through Roleplay","Roleplay must not be used to target, intimidate, or repeatedly harass another player out of character. If a situation becomes personal or crosses community boundaries, contact staff."],
+["No Bug Abuse","Any bugs, glitches, or unintended mechanics that provide an advantage must be reported. Knowingly exploiting them may result in disciplinary action."],
+["No Advertising Without Permission","Advertising other servers, communities, or services without staff permission is prohibited."],
+["Keep Out-of-Character Issues Out of Character","Personal disagreements and community disputes should not be brought into in-game roleplay. Do not use your character to retaliate against someone for an out-of-character disagreement."],
+["No Impersonation","Do not impersonate staff, other community members, or other players in a way intended to deceive or cause harm."],
+["Appropriate Content","Roleplay must remain within the community's standards. Content involving sexual violence, sexual content involving minors, or other prohibited abusive material is strictly forbidden. Do not use graphic or sensitive roleplay to make other players uncomfortable."],
+["Report Rule Breaks Properly","If you believe a rule has been broken, collect relevant evidence where possible and report the incident through the appropriate channels. Do not take matters into your own hands or disrupt ongoing roleplay to argue about a rule."],
+["Streaming and Content Creation","Streaming and recording are permitted, provided you follow all server rules. You remain responsible for protecting private information and ensuring that your content does not encourage harassment, metagaming, or other rule violations."]]],
+["server","Server Rules",2,[
+["Stream Sniping","Do not use another player's livestream or recorded content to gain an in-game advantage. Information learned from a stream must not be used to locate, follow, confront, or interfere with that player or their associates."],
+["Value Your Life (NVL)","Your character must value their life and act realistically when faced with danger. If you are held at gunpoint or placed in a credible life-threatening situation, you must respond appropriately rather than behaving as though your character cannot be harmed."],
+["Vehicle Deathmatching (VDM) and Horse Rider Safety","Using a vehicle or horse to deliberately run over, trample, or injure another player without a valid roleplay reason is prohibited.","Horses are an important part of life in 1907. Riders must be treated with reasonable respect, and players should not deliberately obstruct, strike, or endanger horses and their riders without appropriate roleplay.","Accidental collisions may happen, but deliberately using vehicles or horses as weapons without valid roleplay justification is not permitted."],
+["Player Conflict and Numerical Advantage","Players must approach conflict in a way that allows fair and reasonable roleplay.","Do not use an excessive numerical advantage to overwhelm others without giving them a reasonable opportunity to engage in the situation.","Do not bring uninvolved characters into a conflict simply to gain an unfair advantage.","All participants must have a valid roleplay reason to be involved.","Avoid escalating situations purely to provoke combat.","Staff may assess the circumstances of a conflict when determining whether a rule has been broken."],
+["Groups","Groups and individual characters must remain grounded in believable roleplay.","Do not create or participate in groups that use excessive numbers to dominate every encounter.","Characters must not act as though they are invincible or incapable of being intimidated.","Group size, influence, and capabilities should be appropriate to the setting and the roleplay being undertaken.","Groups are limited to 10 but this will be monitored and adjusted if needed."],
+["Period-Appropriate Roleplay — 1907","Revival Roleplay is set in 1907. Characters, dialogue, occupations, equipment, and behaviour should reflect the period.","Avoid modern slang, technology, terminology, and attitudes that would be out of place in 1907.","Civilian occupations and businesses should fit the era, including the server's intended level of technological advancement.","Vehicles and other advanced features must be treated in a way that makes sense within the server's setting and lore.","Give consideration to the historical context when creating characters, stories, and interactions.","The server's lore takes precedence where it establishes an intentional alternative to real-world history."],
+["Original Characters","Characters should have their own identities, backgrounds, motivations, and personalities.","Do not copy another player's character or deliberately imitate their identity.","Avoid creating characters designed solely to exploit mechanics or disrupt roleplay.","Character backgrounds must be believable within the server's setting.","Characters should develop naturally through their experiences and interactions."],
+["/me Commands and Evidence","Use /me to describe actions that cannot be clearly represented through in-game animations or mechanics.","Actions should be realistic, descriptive, and fair to other participants.","Do not use /me to force outcomes on another character.","Do not invent evidence, injuries, or discoveries to gain an unfair advantage.","Allow other players a reasonable opportunity to respond to your actions."],
+["Hostage Taking","Hostage situations must have a valid roleplay purpose and provide meaningful interaction for everyone involved.","Do not take hostages solely to provoke police or force a particular outcome.","Hostages must be given opportunities to participate in the situation.","Do not use friends or accomplices as hostages to exploit the situation.","Demands should be reasonable and allow the situation to develop naturally.","Hostage-taking must not be used to bypass other server rules."],
+["Permanent Death (Perma-Death)","Permanent death means the character is permanently retired from active roleplay.","A character may be permanently killed only in accordance with the server's permanent-death process and any applicable staff requirements.","Do not force permanent death on another player's character without the required consent or authorisation.","Once a character is permanently retired, they must not return as the same character or use their new character to act on information gained by the previous one.","Contact staff if you are unsure about the permanent-death process."],
+["Psychiatric Diagnosis and Treatment","Do not use psychiatric conditions or mental-health treatment as a joke, a tool for harassment, or a means of forcing another player's character into an outcome.","Mental-health-related roleplay must be handled respectfully and with consideration for other players.","Do not claim that your character can diagnose or treat any condition without appropriate roleplay context.","Medical and psychiatric roleplay must remain consistent with the setting and the server's established systems."]]],
+["character","Character Restrictions",3,[
+["Losing Consciousness and Incapacitation","#Downed Outside of Conflict","If you are downed but are not in an active conflict (e.g., kicked by a horse or suffering fall damage), you are incapacitated.","You may speak and choose to retain your memory of the incident.","You may respawn at your current location or at the nearest doctor.","#Downed During PvP Conflict","If you are downed during an active player-versus-player conflict, you are unconscious. You may remember everything up until you lose consciousness, but must remember nothing from that point until you revive or wake up using F. While unconscious, you may make utterances but cannot remember the details or subject of any conversations.","If you are downed as a result of law enforcement action, you must submit to detainment at the scene.","You may not re-engage another player during an encounter after they have been downed.","If you revive or wake up during active PvP, you may only seek medical aid, hide, or flee the scene.","You may choose to remain downed until other characters provide assistance.","You may not respawn at the doctor."]]]];
+const nav=document.getElementById('nav'),main=document.getElementById('main');
+D.forEach(([id,t,n,rs])=>{
+ nav.insertAdjacentHTML('beforeend',`<a href="#${id}">${n}. ${t}</a>`);
+ const s=document.createElement('section');s.id=id;
+ s.innerHTML=`<h2><span>${n}</span>${t}</h2>`+rs.map(([h,...ps],i)=>`<div class="rule"><h3><i>${n}.${i+1}</i>${h}</h3>${ps.map(p=>p[0]=='#'?`<p class="sub">${p.slice(1)}</p>`:`<p>${p}</p>`).join('')}</div>`).join('');
+ main.appendChild(s);
+});
+document.getElementById('q').addEventListener('input',e=>{
+ const v=e.target.value.toLowerCase().trim();
+ document.querySelectorAll('.rule').forEach(r=>r.classList.toggle('hide',v&&!r.textContent.toLowerCase().includes(v)));
+ document.querySelectorAll('section').forEach(s=>s.style.display=s.querySelector('.rule:not(.hide)')?'':'none');
+});
+</script></body></html>
